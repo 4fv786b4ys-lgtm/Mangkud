@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<title>มังคุดลุงโทน</title>
+
+<!-- Make it installable & full-screen on iPhone -->
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="มังคุดลุงโทน">
+<meta name="theme-color" content="#4c1d95">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="apple-touch-icon" href="icons/icon-192.png">
+<link rel="apple-touch-icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAAC0CAIAAACyr5FlAAAEkklEQVR4nO3dwU0bURSF4UeUAhAl0AB7lt6kBTpBSNlHdEILbOiBBuiAiBKyeNGE2BzbMDPvnnv9f8tItmbu+309IlE4+3n92oCPfIu+APgiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMscsuty+/GkTP/aujQAAAAASUVORK5CYII=">
+<link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAAC0CAIAAACyr5FlAAAEkklEQVR4nO3dwU0bURSF4UeUAhAl0AB7lt6kBTpBSNlHdEILbOiBBuiAiBKyeNGE2BzbMDPvnnv9f8tItmbu+309IlE4+3n92oCPfIu+APgiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMscsuty+/GkTP/aujQAAAAASUVORK5CYII=">
+<link rel="mask-icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAAC0CAIAAACyr5FlAAAEkklEQVR4nO3dwU0bURSF4UeUAhAl0AB7lt6kBTpBSNlHdEILbOiBBuiAiBKyeNGE2BzbMDPvnnv9f8tItmbu+309IlE4+3n92oCPfIu+APgiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMscsuty+/GkTP/aujQAAAAASUVORK5CYII=">
+
+<style>
+  :root{
+    --plum-950:#2e1065;
+    --plum-800:#4c1d95;
+    --plum-600:#7c3aed;
+    --plum-100:#f3ecff;
+    --calyx-600:#4d7c0f;
+    --page:#faf7ff;
+    --ink:#1e1b2e;
+  }
+  *{box-sizing:border-box;-webkit-tap-highlight-color:transparent;}
+  html,body{margin:0;padding:0;background:var(--page);color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Sarabun","Segoe UI",Roboto,sans-serif;
+    -webkit-font-smoothing:antialiased;}
+  body{
+    padding-top:env(safe-area-inset-top);
+    padding-bottom:env(safe-area-inset-bottom);
+    min-height:100vh;
+    overscroll-behavior-y:none;
+  }
+  .wrap{max-width:480px;margin:0 auto;padding:20px 16px 100px;}
+
+  header.app{display:flex;align-items:center;gap:10px;margin-bottom:18px;}
+  header.app .badge{
+    width:42px;height:42px;border-radius:12px;background:var(--plum-600);
+    display:flex;align-items:center;justify-content:center;flex-shrink:0;
+    box-shadow:0 3px 10px rgba(124,58,237,.35);
+  }
+  header.app .badge svg{width:24px;height:24px;}
+  header.app h1{font-size:20px;font-weight:800;margin:0;letter-spacing:-.01em;}
+  header.app p{font-size:13px;color:#6b6478;margin:2px 0 0;}
+
+  .summary{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-bottom:16px;}
+  .summary .card{background:#fff;border:1px solid #ece5fb;border-radius:14px;padding:12px 8px;text-align:center;}
+  .summary .card .num{font-size:19px;font-weight:800;color:var(--plum-800);line-height:1.2;}
+  .summary .card .lbl{font-size:11px;color:#8a8296;margin-top:2px;}
+
+  .list{background:#fff;border:1px solid #ece5fb;border-radius:18px;overflow:hidden;}
+  .empty{padding:40px 20px;text-align:center;color:#a49bb5;font-size:14px;}
+  .entry{display:flex;align-items:flex-start;justify-content:space-between;gap:10px;
+    padding:13px 16px;border-bottom:1px solid #f4effc;}
+  .entry:last-child{border-bottom:none;}
+  .entry .info{min-width:0;flex:1;}
+  .entry .date{font-size:13.5px;font-weight:700;color:var(--ink);}
+  .entry .calc{font-size:13px;color:#7a7286;margin-top:2px;}
+  .entry .calc b{color:var(--plum-800);font-weight:700;}
+  .entry .note{display:inline-block;margin-top:6px;font-size:11px;background:var(--plum-100);
+    color:var(--plum-600);padding:2px 9px;border-radius:99px;font-weight:600;}
+  .entry .actions{display:flex;gap:2px;flex-shrink:0;}
+  .entry .actions button{border:none;background:transparent;color:#c9c2d6;padding:7px;
+    border-radius:9px;display:flex;cursor:pointer;}
+  .entry .actions button:active{background:var(--plum-100);}
+  .entry .actions button.del:active{background:#fee2e2;color:#ef4444;}
+  .entry .actions button svg{width:17px;height:17px;}
+
+  .fab{position:fixed;right:20px;bottom:calc(20px + env(safe-area-inset-bottom));
+    width:56px;height:56px;border-radius:50%;background:var(--plum-600);color:#fff;
+    border:none;display:flex;align-items:center;justify-content:center;
+    box-shadow:0 8px 20px rgba(124,58,237,.4);cursor:pointer;z-index:20;}
+  .fab:active{background:var(--plum-800);}
+  .fab svg{width:26px;height:26px;}
+
+  .overlay{position:fixed;inset:0;background:rgba(30,20,50,.45);display:none;
+    align-items:flex-end;justify-content:center;z-index:50;padding:0;}
+  .overlay.show{display:flex;}
+  @media (min-width:480px){ .overlay{align-items:center;} }
+
+  .sheet{background:#fff;width:100%;max-width:480px;border-radius:20px 20px 0 0;
+    padding:18px 18px calc(18px + env(safe-area-inset-bottom));max-height:88vh;overflow-y:auto;}
+  @media (min-width:480px){ .sheet{border-radius:20px;} }
+  .sheet-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:14px;}
+  .sheet-head h2{font-size:16px;font-weight:800;margin:0;}
+  .sheet-head button{border:none;background:#f4effc;color:#8a8296;width:30px;height:30px;
+    border-radius:9px;display:flex;align-items:center;justify-content:center;cursor:pointer;}
+
+  label.field-label{font-size:12px;color:#8a8296;margin:0 0 5px;display:block;font-weight:600;}
+  .field{margin-bottom:13px;}
+  .field input[type=text],.field input[type=date]{
+    width:100%;border:1.5px solid #e6def9;border-radius:12px;padding:12px 14px;
+    font-size:15px;color:var(--ink);background:#fdfcff;font-family:inherit;}
+  .field input:focus{outline:none;border-color:var(--plum-600);}
+  .hint{font-size:12px;color:#a49bb5;margin-top:5px;}
+  .hint b{color:var(--plum-800);}
+
+  .save-btn{width:100%;background:var(--plum-600);color:#fff;border:none;border-radius:12px;
+    padding:13px;font-size:15.5px;font-weight:700;display:flex;align-items:center;justify-content:center;
+    gap:7px;cursor:pointer;margin-top:2px;}
+  .save-btn:disabled{background:#e6def9;color:#b8aed4;}
+  .save-btn svg{width:18px;height:18px;}
+
+  .loading{min-height:100vh;display:flex;align-items:center;justify-content:center;}
+  .spin{width:30px;height:30px;border:3px solid #e6def9;border-top-color:var(--plum-600);
+    border-radius:50%;animation:spin .7s linear infinite;}
+  @keyframes spin{to{transform:rotate(360deg);}}
+
+  .install-tip{background:#fff;border:1px dashed #d8c9fb;border-radius:14px;padding:12px 14px;
+    font-size:12.5px;color:#6b6478;margin-bottom:16px;line-height:1.6;}
+  .install-tip b{color:var(--plum-800);}
+  .install-tip .close{float:right;border:none;background:none;color:#c9c2d6;cursor:pointer;padding:0 0 0 8px;font-size:13px;}
+</style>
+</head>
+<body>
+
+<div id="loading" class="loading"><div class="spin"></div></div>
+
+<div class="wrap" id="app" style="display:none;">
+  <header class="app">
+    <div class="badge">
+      <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="13" r="8" fill="#f3ecff"/><path d="M12 5c-1.2 0-2 .9-2.6 2 1-.3 1.9-.3 2.6-.3s1.6 0 2.6.3C14 5.9 13.2 5 12 5Z" fill="#4d7c0f"/></svg>
+    </div>
+    <div>
+      <h1>มังคุดลุงโทน</h1>
+      <p>บันทึกน้ำหนักการเก็บผลผลิต</p>
+    </div>
+  </header>
+
+  <div id="installTip" class="install-tip">
+    <button class="close" onclick="dismissTip()">✕</button>
+    <b>เพิ่มเป็นทางลัดบนหน้าจอโฮม:</b> แตะไอคอนแชร์ <span style="font-weight:700">⬆️</span> ด้านล่าง (หรือด้านบน) ของ Safari แล้วเลือก
+    <b>"เพิ่มไปยังหน้าจอโฮม"</b> (Add to Home Screen) จะได้ไอคอนแอปเปิดใช้แบบเต็มจอเหมือนแอปจริง
+  </div>
+
+  <div class="summary">
+    <div class="card"><div class="num" id="sumTotal">0</div><div class="lbl">รวม (กก.)</div></div>
+    <div class="card"><div class="num" id="sumCount">0</div><div class="lbl">ครั้งที่เก็บ</div></div>
+    <div class="card"><div class="num" id="sumAvg">0</div><div class="lbl">เฉลี่ย/ครั้ง</div></div>
+  </div>
+
+  <div class="list" id="list"></div>
+</div>
+
+<button class="fab" onclick="openNewForm()" aria-label="เพิ่มรายการ">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg>
+</button>
+
+<div class="overlay" id="overlay">
+  <div class="sheet">
+    <div class="sheet-head">
+      <h2 id="formTitle">เพิ่มรายการใหม่</h2>
+      <button onclick="closeForm()">✕</button>
+    </div>
+    <div class="field">
+      <label class="field-label">วันที่</label>
+      <input type="date" id="fDate">
+    </div>
+    <div class="field">
+      <label class="field-label">น้ำหนัก (กก.) — คั่นด้วย / ถ้าเก็บหลายรอบ</label>
+      <input type="text" id="fWeights" placeholder="เช่น 44/45/22" oninput="updateHint()">
+      <div class="hint" id="fHint"></div>
+    </div>
+    <div class="field">
+      <label class="field-label">หมายเหตุ (ถ้ามี)</label>
+      <input type="text" id="fNote" placeholder="เช่น พ่อเก็บ, แบ่ง">
+    </div>
+    <button class="save-btn" id="saveBtn" onclick="saveForm()">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+      <span id="saveBtnText">เพิ่มรายการ</span>
+    </button>
+  </div>
+</div>
+
+<script>
+const STORAGE_KEY = "mangkud-entries";
+const TIP_KEY = "mangkud-tip-dismissed";
+
+const SEED_DATA = [
+  ["2026-05-04",[31],""],["2026-05-06",[46.5],""],["2026-05-08",[38,45],""],
+  ["2026-05-10",[44,46,18],""],["2026-05-11",[41,33],""],["2026-05-13",[45,46,49],""],
+  ["2026-05-15",[48,43,46],""],["2026-05-17",[45,37.5,21],""],["2026-05-19",[44,46,21],""],
+  ["2026-05-21",[37.5,45,52],""],["2026-05-23",[40,47],""],["2026-05-25",[41,42,5.5],""],
+  ["2026-05-27",[41,43],""],["2026-05-29",[43,65],""],["2026-05-31",[40,45,45,22],""],
+  ["2026-06-02",[68.5],""],["2026-06-04",[72],"พ่อเก็บ"],["2026-06-06",[44.5,43.5,9],""],
+  ["2026-06-08",[44,45,22],""],["2026-06-11",[44,40],"แบ่ง"],["2026-06-14",[43,41],"แบ่ง"],
+  ["2026-06-18",[46,46],"แบ่ง"],["2026-06-21",[29,53.5,14],""],["2026-06-24",[45,45,41,22.5],""],
+  ["2026-06-27",[46,49,47,47,22.5],""],["2026-06-30",[43,43,42,10.5],""],["2026-07-03",[44,41,37,22],""],
+  ["2026-07-06",[44,45,22],""],["2026-07-09",[31,43,42,43,25],""],["2026-07-12",[41,44,39,45,45,43],""],
+  ["2026-07-15",[48,47,44,44,43,23],""],
+].map(([date,weights,note],i)=>({id:"seed-"+i,date,weights,note}));
+
+let entries = [];
+let editingId = null;
+
+function todayStr(){ return new Date().toISOString().slice(0,10); }
+function sum(arr){ return arr.reduce((a,b)=>a+b,0); }
+function fmt(n){ return n.toLocaleString(undefined,{maximumFractionDigits:1}); }
+function formatDateTh(dateStr){
+  const d = new Date(dateStr+"T00:00:00");
+  return d.toLocaleDateString("th-TH",{weekday:"short",day:"numeric",month:"short",year:"numeric"});
+}
+function parseWeightsText(text){
+  return text.split(/[\/,]/).map(s=>s.trim()).filter(Boolean).map(Number).filter(n=>!isNaN(n)&&n>0);
+}
+
+async function loadEntries(){
+  try{
+    const raw = localStorage.getItem(STORAGE_KEY);
+    if(raw){ entries = JSON.parse(raw); return; }
+  }catch(e){}
+  entries = SEED_DATA;
+  try{ localStorage.setItem(STORAGE_KEY, JSON.stringify(entries)); }catch(e){}
+}
+
+async function persist(){
+  try{ localStorage.setItem(STORAGE_KEY, JSON.stringify(entries)); }catch(e){ console.error(e); }
+}
+
+function render(){
+  const sorted = [...entries].sort((a,b)=> a.date<b.date?1:-1);
+  const grand = sum(entries.map(e=>sum(e.weights)));
+  const count = entries.length;
+  const avg = count ? grand/count : 0;
+
+  document.getElementById("sumTotal").textContent = fmt(grand);
+  document.getElementById("sumCount").textContent = count;
+  document.getElementById("sumAvg").textContent = fmt(avg);
+
+  const list = document.getElementById("list");
+  if(sorted.length === 0){
+    list.innerHTML = '<div class="empty">ยังไม่มีข้อมูล กดปุ่ม + เพื่อเพิ่มรายการแรก</div>';
+    return;
+  }
+  list.innerHTML = sorted.map(e => `
+    <div class="entry">
+      <div class="info">
+        <div class="date">${formatDateTh(e.date)}</div>
+        <div class="calc">${e.weights.join(" + ")} = <b>${fmt(sum(e.weights))} กก.</b></div>
+        ${e.note ? `<span class="note">${escapeHtml(e.note)}</span>` : ""}
+      </div>
+      <div class="actions">
+        <button onclick="openEditForm('${e.id}')" aria-label="แก้ไข">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m18 2 4 4-13 13H5v-4L18 2Z"/></svg>
+        </button>
+        <button class="del" onclick="deleteEntry('${e.id}')" aria-label="ลบ">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18M8 6V4h8v2m-1 0v14a2 2 0 0 1-2 2H9a2 2 0 0 1-2-2V6"/></svg>
+        </button>
+      </div>
+    </div>
+  `).join("");
+}
+
+function escapeHtml(s){
+  return s.replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+}
+
+function openNewForm(){
+  editingId = null;
+  document.getElementById("formTitle").textContent = "เพิ่มรายการใหม่";
+  document.getElementById("saveBtnText").textContent = "เพิ่มรายการ";
+  document.getElementById("fDate").value = todayStr();
+  document.getElementById("fWeights").value = "";
+  document.getElementById("fNote").value = "";
+  updateHint();
+  document.getElementById("overlay").classList.add("show");
+}
+
+function openEditForm(id){
+  const e = entries.find(x=>x.id===id);
+  if(!e) return;
+  editingId = id;
+  document.getElementById("formTitle").textContent = "แก้ไขรายการ";
+  document.getElementById("saveBtnText").textContent = "บันทึกการแก้ไข";
+  document.getElementById("fDate").value = e.date;
+  document.getElementById("fWeights").value = e.weights.join("/");
+  document.getElementById("fNote").value = e.note || "";
+  updateHint();
+  document.getElementById("overlay").classList.add("show");
+}
+
+function closeForm(){
+  document.getElementById("overlay").classList.remove("show");
+}
+
+function updateHint(){
+  const w = parseWeightsText(document.getElementById("fWeights").value);
+  const hint = document.getElementById("fHint");
+  const btn = document.getElementById("saveBtn");
+  if(w.length){
+    hint.innerHTML = "รวม = <b>" + fmt(sum(w)) + " กก.</b>";
+    btn.disabled = false;
+  }else{
+    hint.textContent = "";
+    btn.disabled = true;
+  }
+}
+
+async function saveForm(){
+  const date = document.getElementById("fDate").value;
+  const weights = parseWeightsText(document.getElementById("fWeights").value);
+  const note = document.getElementById("fNote").value.trim();
+  if(!date || weights.length===0) return;
+
+  if(editingId){
+    entries = entries.map(e => e.id===editingId ? {...e,date,weights,note} : e);
+  }else{
+    entries.push({id: Date.now().toString(), date, weights, note});
+  }
+  await persist();
+  render();
+  closeForm();
+}
+
+async function deleteEntry(id){
+  entries = entries.filter(e=>e.id!==id);
+  await persist();
+  render();
+}
+
+function dismissTip(){
+  document.getElementById("installTip").style.display = "none";
+  try{ localStorage.setItem(TIP_KEY, "1"); }catch(e){}
+}
+
+(async function init(){
+  await loadEntries();
+  if(localStorage.getItem(TIP_KEY)){
+    document.getElementById("installTip").style.display = "none";
+  }
+  render();
+  document.getElementById("loading").style.display = "none";
+  document.getElementById("app").style.display = "block";
+})();
+</script>
+
+<script>
+if ("serviceWorker" in navigator) {
+  window.addEventListener("load", () => {
+    navigator.serviceWorker.register("./service-worker.js").catch(console.error);
+  });
+}
+</script>
+
+</body>
+</html>
